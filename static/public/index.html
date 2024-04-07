@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>TODO</title>
+    <script src="https://unpkg.com/htmx.org@1.9.11" integrity="sha384-0gxUXCCR8yv9FM2b+U3FDbsKthCI66oH5IA9fHppQq9DDMHuMauqq1ZHBpJxQ0J0" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+<button hx-get="/api/todos" hx-target="#todos">Load Todos</button>
+<div id="todos"></div>
+
+</body>
+</html>
