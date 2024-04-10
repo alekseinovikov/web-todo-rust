@@ -1,16 +1,10 @@
 #[macro_use]
 extern crate rocket;
-
-use rocket_dyn_templates::Template;
-
-use web::routes::{api_routes, root_routes};
-
-use crate::web::templates::customize;
-
 mod web;
 mod resources;
+mod desktop;
 
-#[launch]
+/*#[launch]
 fn rocket() -> _ {
     let figment = rocket::Config::figment()
         .merge(("template_dir", "."));
@@ -21,4 +15,8 @@ fn rocket() -> _ {
         .attach(Template::custom(move |engines| {
             customize(&mut engines.tera);
         }))
+}*/
+
+pub fn main() -> iced::Result {
+    desktop::ui::run()
 }

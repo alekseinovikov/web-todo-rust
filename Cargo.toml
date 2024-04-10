@@ -9,3 +9,7 @@ edition = "2021"
 rocket = "0.5.0"
 rocket_dyn_templates= { version = "0.1.0", features = ["tera"] }
 rust-embed="8.3.0"
+
+[dependencies.iced]
+git = "https://github.com/iced-rs/iced.git"
+rev = "cdb18e610a72b4a025d7e1890140393adee5b087"
